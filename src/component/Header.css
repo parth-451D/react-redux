@@ -1,0 +1,9 @@
+.navbar{
+    display: inline
+}
+.nav-li{
+    display: inline-block;
+    margin : 10px;
+    text-decoration: center;
+    list-style: none;
+}

@@ -9,13 +9,12 @@ const initialState = {
   items : []
 }
 
-
 export const addItemreducer = (state = initialState, action) => {
   switch (action.type) {
     case "ADD_ITEM":
         return {
           ...state,
-          items : action.data
+          items : items.push(action.payload)
         }
         break ;
     default:

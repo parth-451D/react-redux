@@ -5,7 +5,9 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from 'react-redux';
-import store from './store/store';
+import  reducers  from './store/reducers/index'
+import { createStore } from 'redux';
+const store = createStore(reducers);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
